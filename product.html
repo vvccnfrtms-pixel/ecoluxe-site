@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Product — EcoLuxe Refillable Deodorant</title>
+  <meta name="description" content="EcoLuxe refillable deodorant system — starter kit, refills, ingredients, and subscription." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="logo" href="index.html"><img src="images/logo.svg" alt="EcoLuxe"></a>
+      <nav class="nav">
+        <a href="product.html">The Product</a>
+        <a href="about.html">Our Story</a>
+        <a href="#subscribe">Subscribe</a>
+      </nav>
+      <button class="cta" id="cartBtn">Cart</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="product-hero">
+      <div class="container product-grid">
+        <div class="product-media">
+          <img src="images/product-mock.png" alt="EcoLuxe starter kit">
+        </div>
+        <div class="product-copy">
+          <h1>Starter Kit — Case + Refill</h1>
+          <p class="price">R220</p>
+          <p class="lead">A premium metal case and one refill cartridge. Refill cartridges sold separately or via subscription.</p>
+          <ul>
+            <li>Aluminium-free formula</li>
+            <li>Dermatologically tested</li>
+            <li>Locally formulated with African botanicals</li>
+          </ul>
+          <form id="addToCartForm" class="buy-form">
+            <label for="scent">Scent</label>
+            <select id="scent" name="scent">
+              <option value="bergamot">Bergamot & Cedar</option>
+              <option value="lavender">Lavender & Vetiver</option>
+              <option value="citrus">Citrus & Sage</option>
+            </select>
+            <label for="quantity">Quantity</label>
+            <input id="quantity" name="quantity" type="number" min="1" value="1">
+            <button class="btn btn-primary" type="submit">Add to cart</button>
+          </form>
+
+          <div class="shipping-note">
+            <p>Free shipping over R500. Orders dispatched within 48 hours from East London, South Africa.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container details">
+      <h2>How it works</h2>
+      <p>Open the case, slide out the empty cartridge and insert the new refill. Refill cartridges are compact and shipped in recyclable pouches.</p>
+
+      <h3>Ingredients</h3>
+      <p>Natural ingredients: Shea butter, coconut ester, kaolin clay, baking soda replacement blends, essential oils. (Formulation subject to manufacturer)</p>
+
+      <h3>Subscription</h3>
+      <p>Choose a subscription and never run out. Manage your cadence online.</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="images/logo-mini.svg" alt="EcoLuxe">
+        <p>EcoLuxe — Sustainably Yours, Elegantly Delivered.</p>
+      </div>
+      <nav>
+        <a href="product.html">The Product</a>
+        <a href="about.html">Our Story</a>
+      </nav>
+      <div class="legal">
+        <p>&copy; 2025 EcoLuxe. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

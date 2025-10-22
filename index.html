@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EcoLuxe — Refillable Luxury Deodorant</title>
+  <meta name="description" content="EcoLuxe — refillable, eco-luxury deodorant. Premium natural formula, refill subscription, crafted with South African botanicals." />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="logo" href="index.html" aria-label="EcoLuxe">
+        <img src="images/logo.svg" alt="EcoLuxe logo">
+      </a>
+      <nav class="nav">
+        <a href="product.html">The Product</a>
+        <a href="about.html">Our Story</a>
+        <a href="#subscribe">Subscribe</a>
+      </nav>
+      <button class="cta" id="shopBtn">Shop Now</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Eco-Luxury Refillable Deodorant</h1>
+          <p class="lead">Sustainably yours. Elegantly delivered. A refillable deodorant system engineered for performance, designed for ritual.</p>
+          <ul class="benefits">
+            <li><strong>Refillable:</strong> Reduce waste. Keep the case for years.</li>
+            <li><strong>Premium Natural Formula:</strong> Aluminium-free, vegan, enriched with South African botanicals.</li>
+            <li><strong>Subscription Ready:</strong> Auto-refills delivered to your door.</li>
+          </ul>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="product.html">Buy Starter Kit</a>
+            <a class="btn btn-outline" href="#learnMore">Learn More</a>
+          </div>
+        </div>
+        <div class="hero-media" role="img" aria-label="EcoLuxe deodorant product">
+          <img src="images/product-mock.png" alt="EcoLuxe refillable deodorant">
+        </div>
+      </div>
+    </section>
+
+    <section id="learnMore" class="container features">
+      <div class="feature">
+        <h3>Design & Ritual</h3>
+        <p>Minimalist European design meets African botanicals. The refill ritual is tactile — a premium moment each cycle.</p>
+      </div>
+      <div class="feature">
+        <h3>Performance</h3>
+        <p>Formulated to provide long-lasting protection without aluminium or parabens. Dermatologist-tested ingredients.</p>
+      </div>
+      <div class="feature">
+        <h3>Sustainability</h3>
+        <p>Aluminium or glass casing, recyclable refills, low-waste packaging — transparent sourcing and impact metrics.</p>
+      </div>
+    </section>
+
+    <section class="social-proof container">
+      <h2>What early customers say</h2>
+      <div class="testimonials">
+        <blockquote>
+          <p>“Great scent, lasts all day — and the refill is so easy.”</p>
+          <cite>— L. from Cape Town</cite>
+        </blockquote>
+        <blockquote>
+          <p>“Feels premium — beautiful packaging and ethical too.”</p>
+          <cite>— M. from Joburg</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="subscribe" class="subscribe-section">
+      <div class="container subscribe-grid">
+        <div class="subscribe-copy">
+          <h3>Never run out. Subscribe & save.</h3>
+          <p>Choose a cadence and we’ll deliver your refill on time. Skip or cancel anytime.</p>
+        </div>
+        <form id="subscribeForm" class="subscribe-form" aria-label="Subscribe form">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@domain.com" required>
+          <label for="cadence">Cadence</label>
+          <select id="cadence" name="cadence">
+            <option value="2">Every 2 months</option>
+            <option value="3" selected>Every 3 months</option>
+            <option value="6">Every 6 months</option>
+          </select>
+          <button class="btn btn-primary" type="submit">Start Subscription</button>
+          <p class="small">We use secure payments and never share your email.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="container cta-band">
+      <div>
+        <h3>Starter Kit</h3>
+        <p>Premium case + one refill — everything you need to begin.</p>
+      </div>
+      <a class="btn btn-primary" href="product.html">Buy Starter Kit</a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="images/logo-mini.svg" alt="EcoLuxe">
+        <p>EcoLuxe — Sustainably Yours, Elegantly Delivered.</p>
+      </div>
+      <nav>
+        <a href="product.html">The Product</a>
+        <a href="about.html">Our Story</a>
+        <a href="#subscribe">Subscribe</a>
+      </nav>
+      <div class="legal">
+        <p>&copy; 2025 EcoLuxe. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
