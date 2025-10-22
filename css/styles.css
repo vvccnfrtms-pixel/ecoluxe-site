@@ -7,12 +7,17 @@
   --font-sans: 'Inter', sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: var(--font-sans);
   background-color: var(--charcoal);
   color: var(--ivory);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 .container {
@@ -23,11 +28,16 @@ body {
 
 /* Header */
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background: var(--charcoal);
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
+  transition: background 0.3s, box-shadow 0.3s;
 }
 
 .logo {
@@ -50,9 +60,34 @@ body {
 /* Hero */
 .hero {
   text-align: center;
-  padding: 120px 20px;
+  padding: 140px 20px 80px;
   background: linear-gradient(to bottom, var(--charcoal) 70%, var(--eucalyptus) 100%);
   color: var(--ivory);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.03) 0%, transparent 70%);
+  transform: translateX(0);
+  animation: hero-parallax 30s linear infinite;
+  z-index: 0;
+}
+
+@keyframes hero-parallax {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
 }
 
 .hero h1 {
@@ -76,7 +111,7 @@ body {
   font-weight: 600;
   text-decoration: none;
   border-radius: 30px;
-  transition: background 0.3s;
+  transition: background 0.3s, color 0.3s;
 }
 
 .cta:hover {
@@ -94,6 +129,9 @@ body {
 
 .feature {
   margin-bottom: 60px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease-out;
 }
 
 .feature h2 {
@@ -107,8 +145,11 @@ body {
   background: var(--charcoal);
   color: var(--ivory);
   text-align: center;
-  padding: 40px 0;
+  padding: 60px 20px;
   font-size: 0.9rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease-out;
 }
 
 .footer-logo {
